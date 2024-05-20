@@ -47,7 +47,7 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="bg-back-card z-9 sm:w-full h-52 rounded-md sm:-mr-72 -mr-10">
+        <div className="bg-back-card z-9 sm:z-10 sm:w-full h-52 rounded-md sm:-mr-72 -mr-10">
           <p className=" mt-[110px] sm:ml-72 ml-72 pr-8">{cvv || "000"}</p>
         </div>
       </div>
