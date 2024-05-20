@@ -22,7 +22,19 @@ input {
   background-image: url(../src/img/bg-main-desktop.png);
 }
 
-.card-bg {
-  background-image: url(..src/img/bg-card-front.png);
+.bg-front-card {
+  background-image: url(../src/img/bg-card-front.png);
 }
 
+.bg-back-card{
+  background-image: url(../src/img/bg-card-back.png);
+}
+
+#card p{
+  text-transform: uppercase ;
+  @apply text-sm
+}
+
+.complete h1{
+  text-transform: uppercase;
+}
