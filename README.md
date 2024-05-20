@@ -31,15 +31,14 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshots/s1.png)
-![](./screenshots/s1.png)
-![](./screenshots/s1.png)
-![](./screenshots/s1.png)
-![](./screenshots/s1.png)
+![](./screenshots/s2.png)
+![](./screenshots/s3.png)
+![](./screenshots/s4.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/njeruthuo/Interactive-card-details](https://github.com/njeruthuo/Interactive-card-details)
+- Live Site URL: [https://interactive-card-details-seven-gold.vercel.app/](https://interactive-card-details-seven-gold.vercel.app/)
 
 ## My process
 
