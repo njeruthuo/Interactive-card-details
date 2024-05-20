@@ -28,32 +28,32 @@ const App = () => {
   };
 
   return (
-    <section className="flex sm:flex-row flex-col min-h-screen">
-      <div className="bg-img w-1/4 flex flex-col space-y-8 justify-center items-center text-white">
+    <section className="flex flex-col sm:flex-row min-h-screen">
+      <div className="bg-img sm:w-1/4  sm:h-auto flex flex-col-reverse sm:flex-col space-y-8 justify-center items-center text-white">
         <div
           id="card"
-          className="bg-front-card z-10 w-full h-52 rounded-md -mr-48 p-4"
+          className="bg-front-card z-10 sm:w-full w-[75%] sm:h-52 h-auto rounded-md sm:-mr-48 p-4 -mb-8 sm:-mb-0 -ml-16 sm:-ml-0 -mt-[69px]"
         >
           <img src={logo} className="h-8" alt="Logo" />
 
           <div className="mt-14">
-            <h1 className="text-3xl w-full">
+            <h1 className="sm:text-3xl text-xl w-full">
               {cardNumber || "0000 0000 0000 0000"}
             </h1>
 
-            <div className="flex justify-between mt-6">
+            <div className="flex justify-between sm:mt-6 mr-6 sm:mr-4">
               <p>{name || "Jane Appleseed"}</p>
               <p>{`${month || "00"}/${year || "00"}`}</p>
             </div>
           </div>
         </div>
-        <div className="bg-back-card z-10 w-full h-52 rounded-md -mr-72">
-          <p className="mr-auto mt-[110px] ml-72">{cvv || "000"}</p>
+        <div className="bg-back-card z-9 sm:w-full h-52 rounded-md sm:-mr-72 -mr-10">
+          <p className=" mt-[110px] sm:ml-72 ml-72 pr-8">{cvv || "000"}</p>
         </div>
       </div>
       <div
         id="form"
-        className="w-3/4 flex justify-center items-center bg-white"
+        className="sm:w-3/4 flex justify-center items-center bg-white p-8 sm:p-0"
       >
         {success ? (
           <div className="complete flex flex-col justify-center items-center w-full">
@@ -69,7 +69,10 @@ const App = () => {
             </div>
           </div>
         ) : (
-          <form className="w-2/5" onSubmit={handleSubmit}>
+          <form
+            className="sm:w-2/5 w-full mt-10 sm:mt-0"
+            onSubmit={handleSubmit}
+          >
             {/* Card name */}
             <div>
               <label htmlFor="name" className="">
@@ -110,7 +113,7 @@ const App = () => {
             {/* Expiry date */}
             <div className="w-full flex gap-4">
               <div className="w-1/2">
-                <label htmlFor="date">exp. date (mm/yy)</label>
+                <label htmlFor="month">exp. date (mm/yy)</label>
                 <div className="flex gap-3 w-full">
                   <input
                     placeholder="MM"

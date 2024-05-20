@@ -20,14 +20,19 @@ input {
 
 .bg-img {
   background-image: url(../src/img/bg-main-desktop.png);
+  background-repeat: no-repeat;
 }
 
 .bg-front-card {
   background-image: url(../src/img/bg-card-front.png);
+  background-repeat: no-repeat;
 }
 
 .bg-back-card{
   background-image: url(../src/img/bg-card-back.png);
+  background-repeat: no-repeat;
+  object-position: center;
+  object-fit: cover;
 }
 
 #card p{
